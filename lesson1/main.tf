@@ -9,8 +9,8 @@ terraform {
 
 provider "aws" {
   region = "us-east-1"
-  shared_config_files      = ["/Users/Administrator/.aws/config"]
-  shared_credentials_files = ["/Users/Administrator/.aws/credentials"]
+  shared_config_files      = ["/Users/Administrator/AWS/config"]
+  shared_credentials_files = ["/Users/Administrator/AWS/credentials"]
 }
 
 data "aws_vpcs" "myVPCs" {
