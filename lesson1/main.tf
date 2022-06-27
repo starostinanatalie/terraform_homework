@@ -5,6 +5,13 @@ terraform {
       version = "4.13.0"
     }
   }
+  backend "s3" {
+    bucket = "nstar-tf-backend"
+    encrypt = true
+    key = "terraformlesson1.tfstate"
+    region = "us-east-1"
+    shared_credentials_file = "/Users/Administrator/AWS/credentials"
+  }
 }
 
 provider "aws" {
